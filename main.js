@@ -1810,9 +1810,12 @@ function runVaultSetup() {
           aiDetect.textContent     = 'Ollama 감지 중...';
           aiDetect.style.color     = 'rgba(150,200,255,0.5)';
 
+          // UI 렌더링 먼저 처리 후 fetch
+          await new Promise(r => setTimeout(r, 0));
+
           try {
             const r = await fetch('http://localhost:11434/api/tags',
-                                  { signal: AbortSignal.timeout(2500) });
+                                  { signal: AbortSignal.timeout(1200) });
             const { models = [] } = await r.json();
             const names = models.map(m => m.name);
             if (!names.length) throw new Error('no models');
