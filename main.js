@@ -2129,6 +2129,17 @@ ${textContent ? '내용:\n'+textContent.substring(0,2000)
         } catch { return null; }
       }
 
+      // 로컬 서버 생존 여부 (한 번만 체크, 캐시)
+      let _serverAlive = null;
+      async function isServerAlive() {
+        if (_serverAlive !== null) return _serverAlive;
+        try {
+          await fetch(CONVERT_URL + '/health', { signal: AbortSignal.timeout(1500) });
+          _serverAlive = true;
+        } catch { _serverAlive = false; }
+        return _serverAlive;
+      }
+
       // 미리보기 fetch (단일 파일, 타임아웃 짧게)
       async function fetchPreview(file, ext) {
         // PDF는 브라우저에서 직접 처리
@@ -2137,6 +2148,8 @@ ${textContent ? '내용:\n'+textContent.substring(0,2000)
           if (result) return { type: 'text', text: result.text, ext: 'PDF', pages: result.pages };
           return null;
         }
+        // 로컬 서버 필요한 파일들 — 서버 없으면 즉시 스킵
+        if (!await isServerAlive()) return null;
         try {
           const fd = new FormData();
           fd.append('file', file);
