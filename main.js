@@ -2097,11 +2097,46 @@ ${textContent ? '내용:\n'+textContent.substring(0,2000)
 
       const notes = [];
       const CONVERT_URL  = 'http://localhost:3001';
-      const PREVIEW_TIMEOUT = 8000; // 파일당 최대 8초
+      const PREVIEW_TIMEOUT = 3000; // 파일당 최대 3초 (이전 8초 → 단축)
       const PARALLEL_LIMIT  = 6;    // 동시 처리 최대 6개
+
+      // PDF.js 브라우저 직접 파싱
+      let _pdfLib = null;
+      async function getPdfLib() {
+        if (_pdfLib) return _pdfLib;
+        try {
+          const mod = await import('https://cdn.jsdelivr.net/npm/pdfjs-dist@4.4.168/build/pdf.min.mjs');
+          mod.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.4.168/build/pdf.worker.min.mjs';
+          _pdfLib = mod;
+        } catch { _pdfLib = null; }
+        return _pdfLib;
+      }
+
+      async function extractPdfText(file) {
+        try {
+          const lib = await getPdfLib();
+          if (!lib) return null;
+          const buf = await file.arrayBuffer();
+          const pdf = await lib.getDocument({ data: buf }).promise;
+          const maxPages = Math.min(pdf.numPages, 5); // 최대 5페이지만
+          let text = '';
+          for (let p = 1; p <= maxPages; p++) {
+            const page = await pdf.getPage(p);
+            const content = await page.getTextContent();
+            text += content.items.map(i => i.str).join(' ') + '\n';
+          }
+          return { pages: pdf.numPages, text: text.slice(0, 1000) };
+        } catch { return null; }
+      }
 
       // 미리보기 fetch (단일 파일, 타임아웃 짧게)
       async function fetchPreview(file, ext) {
+        // PDF는 브라우저에서 직접 처리
+        if (ext === 'pdf') {
+          const result = await extractPdfText(file);
+          if (result) return { type: 'text', text: result.text, ext: 'PDF', pages: result.pages };
+          return null;
+        }
         try {
           const fd = new FormData();
           fd.append('file', file);
