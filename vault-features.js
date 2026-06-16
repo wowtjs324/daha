@@ -11,65 +11,62 @@
 // ① 자동 유사도 링크
 // ═══════════════════════════════════════════════
 export function buildAutoLinks(data, threshold = 0.18, maxPerNode = 5) {
-  // TF-IDF 벡터 계산
   const tokenize = s =>
     (s || '').toLowerCase()
       .replace(/[^a-z0-9가-힣\s]/g, ' ')
       .split(/\s+/).filter(t => t.length > 1);
 
-  // IDF
-  const df = {};
-  data.forEach(n => {
-    const toks = new Set(tokenize(n.title + ' ' + n.content));
-    toks.forEach(t => { df[t] = (df[t] || 0) + 1; });
-  });
   const N = data.length;
-  const idf = t => Math.log((N + 1) / ((df[t] || 0) + 1));
 
-  // TF-IDF 벡터
-  const vocab   = Object.keys(df);
-  const vocabIdx = {};
-  vocab.forEach((t, i) => vocabIdx[t] = i);
+  // DF 계산 (희소 표현용)
+  const df = {};
+  const noteToks = data.map(n => {
+    const toks = tokenize(n.title + ' ' + (n.content || '').slice(0, 800));
+    const uniq = new Set(toks);
+    uniq.forEach(t => { df[t] = (df[t] || 0) + 1; });
+    return toks;
+  });
 
-  function tfidf(note) {
-    const toks  = tokenize(note.title + ' ' + note.content);
-    const tf    = {};
+  // 희소 TF-IDF 벡터 { token → weight }
+  const sparseVecs = noteToks.map(toks => {
+    const tf = {};
     toks.forEach(t => { tf[t] = (tf[t] || 0) + 1; });
-    const vec = new Float32Array(vocab.length);
+    const len = toks.length || 1;
+    const vec = {};
+    let norm = 0;
     Object.entries(tf).forEach(([t, cnt]) => {
-      const i = vocabIdx[t];
-      if (i !== undefined) vec[i] = (cnt / toks.length) * idf(t);
+      const w = (cnt / len) * Math.log((N + 1) / ((df[t] || 0) + 1));
+      if (w > 0) { vec[t] = w; norm += w * w; }
     });
+    const sqrtNorm = Math.sqrt(norm) || 1;
+    Object.keys(vec).forEach(t => { vec[t] /= sqrtNorm; });
     return vec;
-  }
+  });
 
-  function cosine(a, b) {
-    let dot = 0, ma = 0, mb = 0;
-    for (let i = 0; i < a.length; i++) {
-      dot += a[i] * b[i];
-      ma  += a[i] * a[i];
-      mb  += b[i] * b[i];
-    }
-    return ma && mb ? dot / (Math.sqrt(ma) * Math.sqrt(mb)) : 0;
+  // 희소 코사인 유사도 (공유 토큰만 계산 → O(k) not O(vocab))
+  function sparseCosine(a, b) {
+    let dot = 0;
+    for (const t in a) { if (b[t]) dot += a[t] * b[t]; }
+    return dot; // 이미 정규화돼 있음
   }
-
-  const vecs = data.map(n => tfidf(n));
 
   data.forEach((note, i) => {
     const existing = new Set(
       (note.links || []).map(l => typeof l === 'string' ? l : l.target)
     );
     const scores = [];
-    data.forEach((other, j) => {
-      if (i === j || existing.has(other.title)) return;
-      const sim = cosine(vecs[i], vecs[j]);
-      if (sim >= threshold) scores.push({ target: other.title, similarity: sim });
-    });
+    for (let j = 0; j < N; j++) {
+      if (i === j || existing.has(data[j].title)) continue;
+      const sim = sparseCosine(sparseVecs[i], sparseVecs[j]);
+      if (sim >= threshold) scores.push({ target: data[j].title, similarity: sim });
+    }
     scores.sort((a, b) => b.similarity - a.similarity);
-    const autoLinks = scores.slice(0, maxPerNode).map(s => ({
-      target: s.target, similarity: +(s.similarity.toFixed(3)), auto: true,
-    }));
-    note.links = [...(note.links || []), ...autoLinks];
+    note.links = [
+      ...(note.links || []),
+      ...scores.slice(0, maxPerNode).map(s => ({
+        target: s.target, similarity: +(s.similarity.toFixed(3)), auto: true,
+      })),
+    ];
   });
 
   return data;
@@ -88,7 +85,7 @@ export function clusterNodes(data, k = 6, iterations = 20) {
   // 단어 빈도 벡터 (간단 BoW)
   const allWords = {};
   data.forEach(n => {
-    tokenize(n.title + ' ' + n.content).forEach(t => { allWords[t] = 1; });
+    tokenize(n.title + ' ' + (n.content || '').slice(0, 600)).forEach(t => { allWords[t] = 1; });
   });
   const words = Object.keys(allWords).slice(0, 300); // 상위 300 단어
   const wIdx  = {};
@@ -96,7 +93,7 @@ export function clusterNodes(data, k = 6, iterations = 20) {
 
   function bow(note) {
     const v = new Float32Array(words.length);
-    tokenize(note.title + ' ' + note.content).forEach(t => {
+    tokenize(note.title + ' ' + (note.content || '').slice(0, 600)).forEach(t => {
       if (wIdx[t] !== undefined) v[wIdx[t]]++;
     });
     return v;
