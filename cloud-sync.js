@@ -1,25 +1,37 @@
 /**
  * Knowledge Vault — Supabase 클라우드 동기화
- *
- * .env 대신 아래 두 값을 직접 채우거나
- * 배포 후 환경변수로 주입하세요.
+ * Supabase를 동적 import로 로드해서 CDN 실패 시에도 앱이 정상 작동합니다.
  */
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 // ─── 여기 두 값을 Supabase 프로젝트에서 복사해서 넣으세요 ───
-const SUPABASE_URL     = 'YOUR_SUPABASE_URL';
+const SUPABASE_URL      = 'YOUR_SUPABASE_URL';
 const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
 // ────────────────────────────────────────────────────────────
 
-const isConfigured = SUPABASE_URL !== 'YOUR_SUPABASE_URL';
-const supabase     = isConfigured ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+export const isConfigured = SUPABASE_URL !== 'YOUR_SUPABASE_URL';
+
+let _supabase = null;
+
+async function getClient() {
+  if (_supabase) return _supabase;
+  if (!isConfigured) return null;
+  try {
+    const { createClient } = await import('https://esm.sh/@supabase/supabase-js@2');
+    _supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    return _supabase;
+  } catch (e) {
+    console.warn('[vault:cloud] Supabase 로드 실패:', e.message);
+    return null;
+  }
+}
 
 /**
  * 앱 시작 시 클라우드에서 메모를 내려받아 localStorage에 채웁니다.
- * 클라우드 값이 더 최신이면 덮어씁니다.
  */
 export async function syncFromCloud(userName) {
   if (!isConfigured || !userName) return;
+  const supabase = await getClient();
+  if (!supabase) return;
   try {
     const { data, error } = await supabase
       .from('vault_memos')
@@ -33,7 +45,6 @@ export async function syncFromCloud(userName) {
       const cloudTime = row.updated_at ? new Date(row.updated_at).getTime() : 0;
       const localTime = localStorage.getItem(`_vaultMemoTS_${row.note_title}`) || 0;
 
-      // 클라우드가 더 최신이거나 로컬에 없으면 덮어쓰기
       if (cloudTime > Number(localTime)) {
         localStorage.setItem(localKey, row.memo || '');
         localStorage.setItem(`_vaultMemoTS_${row.note_title}`, String(cloudTime));
@@ -57,6 +68,8 @@ export async function syncFromCloud(userName) {
  */
 export async function saveToCloud(userName, noteTitle, memo) {
   if (!isConfigured || !userName) return;
+  const supabase = await getClient();
+  if (!supabase) return;
   const ts = new Date().toISOString();
   localStorage.setItem(`_vaultMemoTS_${noteTitle}`, String(new Date(ts).getTime()));
   try {
@@ -68,5 +81,3 @@ export async function saveToCloud(userName, noteTitle, memo) {
     console.warn('[vault:cloud] 저장 실패 (로컬에는 저장됨):', e.message);
   }
 }
-
-export { isConfigured };
