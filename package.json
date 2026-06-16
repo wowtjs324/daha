@@ -1,0 +1,28 @@
+{
+  "name": "project-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"node server.js\" \"npx serve -p 3000 .\"",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "canvas": "^3.2.3",
+    "concurrently": "^10.0.3",
+    "cors": "^2.8.6",
+    "dxf": "^5.3.1",
+    "express": "^5.2.1",
+    "jimp": "^1.6.1",
+    "mammoth": "^1.12.0",
+    "multer": "^2.1.1",
+    "officegen": "^0.6.5",
+    "pdfjs-dist": "^6.0.227",
+    "xlsx": "^0.18.5"
+  }
+}

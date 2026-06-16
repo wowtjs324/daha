@@ -1,0 +1,1821 @@
+﻿[
+    {
+        "title":  "AETHER_ARCHIVE",
+        "category":  "AETHER",
+        "importance":  20,
+        "content":  "기억은 디지털 구조 안에서 다시 연결된다.",
+        "links":  [
+                      {
+                          "target":  "ARC_GATE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_SIGNAL",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "AETHER_CHANNEL",
+        "category":  "AETHER",
+        "importance":  19,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_THREAD",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "AETHER_FLOW",
+        "category":  "AETHER",
+        "importance":  1,
+        "content":  "네트워크는 개별 존재를 하나의 시스템으로 묶는다.",
+        "links":  [
+                      {
+                          "target":  "AETHER_SYSTEM",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ARC_BUFFER",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "AETHER_FRAME",
+        "category":  "AETHER",
+        "importance":  8,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_THREAD",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "AETHER_NODE",
+        "category":  "AETHER",
+        "importance":  9,
+        "content":  "9",
+        "links":  [
+
+                  ]
+    },
+    {
+        "title":  "AETHER_SYSTEM",
+        "category":  "AETHER",
+        "importance":  7,
+        "content":  "네트워크는 개별 존재를 하나의 시스템으로 묶는다.",
+        "links":  [
+                      {
+                          "target":  "AETHER_FLOW",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ARC_BUFFER",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "AETHER_TERMINAL",
+        "category":  "AETHER",
+        "importance":  25,
+        "content":  "빛의 잔상은 새로운 공간 감각을 만든다.",
+        "links":  [
+                      {
+                          "target":  "ARC_MEMORY",
+                          "similarity":  0.91
+                      },
+                      {
+                          "target":  "ASTRAL_ARCHIVE",
+                          "similarity":  0.91
+                      }
+                  ]
+    },
+    {
+        "title":  "AI",
+        "category":  "OTHER",
+        "importance":  27,
+        "content":  "AI는 기억을 다시 조직하는 새로운 구조가 될 수 있다.",
+        "links":  [
+
+                  ]
+    },
+    {
+        "title":  "Architecture",
+        "category":  "OTHER",
+        "importance":  24,
+        "content":  "구조는 기능과 감정 사이의 균형이다.",
+        "links":  [
+                      {
+                          "target":  "ASTRAL_SYSTEM",
+                          "similarity":  0.81
+                      }
+                  ]
+    },
+    {
+        "title":  "ARCHIVE_PULSE",
+        "category":  "OTHER",
+        "importance":  2,
+        "content":  "2",
+        "links":  [
+
+                  ]
+    },
+    {
+        "title":  "ARC_BUFFER",
+        "category":  "ARC",
+        "importance":  24,
+        "content":  "네트워크는 개별 존재를 하나의 시스템으로 묶는다.",
+        "links":  [
+                      {
+                          "target":  "AETHER_FLOW",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_SYSTEM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ARC_GATE",
+        "category":  "ARC",
+        "importance":  2,
+        "content":  "기억은 디지털 구조 안에서 다시 연결된다.",
+        "links":  [
+                      {
+                          "target":  "AETHER_ARCHIVE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_SIGNAL",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ARC_MEMORY",
+        "category":  "ARC",
+        "importance":  23,
+        "content":  "정보의 흐름은 새로운 건축 언어를 만든다.",
+        "links":  [
+                      {
+                          "target":  "ASTRAL_ARCHIVE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_TERMINAL",
+                          "similarity":  0.91
+                      }
+                  ]
+    },
+    {
+        "title":  "ARC_NETWORK",
+        "category":  "ARC",
+        "importance":  18,
+        "content":  "빛은 기억보다 먼저 공간을 통과한다.",
+        "links":  [
+                      {
+                          "target":  "ASTRAL_MEMORY",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ASTRAL_ARCHIVE",
+        "category":  "ASTRAL",
+        "importance":  12,
+        "content":  "정보의 흐름은 새로운 건축 언어를 만든다.",
+        "links":  [
+                      {
+                          "target":  "ARC_MEMORY",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_TERMINAL",
+                          "similarity":  0.91
+                      }
+                  ]
+    },
+    {
+        "title":  "ASTRAL_CHANNEL",
+        "category":  "ASTRAL",
+        "importance":  14,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_THREAD",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ASTRAL_MEMORY",
+        "category":  "ASTRAL",
+        "importance":  18,
+        "content":  "빛은 기억보다 먼저 공간을 통과한다.",
+        "links":  [
+                      {
+                          "target":  "ARC_NETWORK",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ASTRAL_NETWORK",
+        "category":  "ASTRAL",
+        "importance":  6,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_THREAD",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ASTRAL_NODE",
+        "category":  "ASTRAL",
+        "importance":  2,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_THREAD",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ASTRAL_SIGNAL",
+        "category":  "ASTRAL",
+        "importance":  27,
+        "content":  "기억은 디지털 구조 안에서 다시 연결된다.",
+        "links":  [
+                      {
+                          "target":  "AETHER_ARCHIVE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ARC_GATE",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ASTRAL_STREAM",
+        "category":  "ASTRAL",
+        "importance":  11,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_THREAD",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ASTRAL_SYSTEM",
+        "category":  "ASTRAL",
+        "importance":  30,
+        "content":  "도시는 거대한 인터페이스로 변화하고 있다.",
+        "links":  [
+                      {
+                          "target":  "Architecture",
+                          "similarity":  0.81
+                      }
+                  ]
+    },
+    {
+        "title":  "ASTRAL_THREAD",
+        "category":  "ASTRAL",
+        "importance":  10,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "CIPHER_GATE",
+        "category":  "CIPHER",
+        "importance":  20,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "CIPHER_THREAD",
+        "category":  "CIPHER",
+        "importance":  5,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "CORE_GATE",
+        "category":  "CORE",
+        "importance":  12,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "CORE_GRID",
+        "category":  "CORE",
+        "importance":  19,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ECHO_FIELD",
+        "category":  "ECHO",
+        "importance":  5,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ECHO_VECTOR",
+        "category":  "ECHO",
+        "importance":  1,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "LUMEN_NETWORK",
+        "category":  "LUMEN",
+        "importance":  20,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "LUMEN_THREAD",
+        "category":  "LUMEN",
+        "importance":  17,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "MEMORY_BRIDGE",
+        "category":  "MEMORY",
+        "importance":  20,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "MEMORY_BRIDGE_1",
+        "category":  "MEMORY",
+        "importance":  3,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "MEMORY_CLUSTER",
+        "category":  "MEMORY",
+        "importance":  18,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "MEMORY_PORT",
+        "category":  "MEMORY",
+        "importance":  11,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "MEMORY_THREAD",
+        "category":  "MEMORY",
+        "importance":  7,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "NEON_FLOW",
+        "category":  "NEON",
+        "importance":  13,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "NEON_NODE",
+        "category":  "NEON",
+        "importance":  3,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "NEON_NODE_1",
+        "category":  "NEON",
+        "importance":  11,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "NEON_PORT",
+        "category":  "NEON",
+        "importance":  19,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "NEXUS_STREAM",
+        "category":  "NEXUS",
+        "importance":  11,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "NEXUS_VECTOR",
+        "category":  "NEXUS",
+        "importance":  16,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ORBIT_GRID",
+        "category":  "ORBIT",
+        "importance":  13,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ORBIT_NODE",
+        "category":  "ORBIT",
+        "importance":  5,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "PULSE_BRIDGE",
+        "category":  "PULSE",
+        "importance":  8,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "PULSE_FIELD",
+        "category":  "PULSE",
+        "importance":  17,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "PULSE_NETWORK",
+        "category":  "PULSE",
+        "importance":  19,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "QUANTUM_BRIDGE",
+        "category":  "QUANTUM",
+        "importance":  12,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "QUANTUM_GRID",
+        "category":  "QUANTUM",
+        "importance":  17,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "QUANTUM_MATRIX",
+        "category":  "QUANTUM",
+        "importance":  11,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "QUANTUM_NETWORK",
+        "category":  "QUANTUM",
+        "importance":  8,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "QUANTUM_NODE",
+        "category":  "QUANTUM",
+        "importance":  3,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "SHADOW_CLUSTER",
+        "category":  "SHADOW",
+        "importance":  9,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "SIGNAL_BUFFER",
+        "category":  "SIGNAL",
+        "importance":  2,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "SIGNAL_BUFFER_1",
+        "category":  "SIGNAL",
+        "importance":  7,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "SPECTRAL_SYSTEM",
+        "category":  "SPECTRAL",
+        "importance":  18,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "SPECTRAL_SYSTEM_1",
+        "category":  "SPECTRAL",
+        "importance":  12,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "SYNTH_BRIDGE",
+        "category":  "SYNTH",
+        "importance":  6,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "SYNTH_NODE",
+        "category":  "SYNTH",
+        "importance":  18,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "SYNTH_SYSTEM",
+        "category":  "SYNTH",
+        "importance":  20,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "VOID_BUFFER",
+        "category":  "VOID",
+        "importance":  3,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "VOID_GRID",
+        "category":  "VOID",
+        "importance":  17,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "VOID_PORT",
+        "category":  "VOID",
+        "importance":  3,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ZENITH_ARCHIVE",
+        "category":  "ZENITH",
+        "importance":  10,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ZENITH_NETWORK",
+        "category":  "ZENITH",
+        "importance":  20,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    },
+    {
+        "title":  "ZENITH_VECTOR",
+        "category":  "ZENITH",
+        "importance":  1,
+        "content":  "",
+        "links":  [
+                      {
+                          "target":  "AETHER_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "AETHER_FRAME",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_CHANNEL",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NETWORK",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_NODE",
+                          "similarity":  1
+                      },
+                      {
+                          "target":  "ASTRAL_STREAM",
+                          "similarity":  1
+                      }
+                  ]
+    }
+]

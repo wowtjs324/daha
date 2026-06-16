@@ -1,0 +1,9 @@
+# CORE_SIGNAL
+
+## Importance
+18
+
+## Links
+- DATA_STREAM
+- LIGHT_GRID
+- AETHER_NODE

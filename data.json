@@ -1,0 +1,475 @@
+[
+  {
+    "title": "AETHER_ARCHIVE",
+    "importance": 20,
+    "content": "기억은 디지털 구조 안에서 다시 연결된다.",
+    "links": [
+      "ASTRAL_THREAD",
+      "MEMORY_VECTOR",
+      "SHADOW_CLUSTER",
+      "SPECTRAL_CHANNEL",
+      "importance"
+    ]
+  },
+  {
+    "title": "AETHER_CHANNEL",
+    "importance": 19,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "AETHER_FLOW",
+    "importance": 1,
+    "content": "네트워크는 개별 존재를 하나의 시스템으로 묶는다.",
+    "links": [
+      "NEON_VECTOR",
+      "NEXUS_BUFFER",
+      "ZENITH_GATE",
+      "importance"
+    ]
+  },
+  {
+    "title": "AETHER_FRAME",
+    "importance": 8,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "AETHER_NODE",
+    "importance": 9,
+    "content": "9",
+    "links": [
+      "CORE_SIGNAL",
+      "ENERGY_GATE"
+    ]
+  },
+  {
+    "title": "AETHER_SYSTEM",
+    "importance": 7,
+    "content": "네트워크는 개별 존재를 하나의 시스템으로 묶는다.",
+    "links": [
+      "NEXUS_FIELD",
+      "NEXUS_GATE",
+      "ORBIT_MEMORY",
+      "SIGNAL_NODE",
+      "importance"
+    ]
+  },
+  {
+    "title": "AETHER_TERMINAL",
+    "importance": 25,
+    "content": "빛의 잔상은 새로운 공간 감각을 만든다.",
+    "links": [
+      "DELTA_GRID",
+      "QUANTUM_GRID",
+      "importance"
+    ]
+  },
+  {
+    "title": "AI",
+    "importance": 27,
+    "content": "AI는 기억을 다시 조직하는 새로운 구조가 될 수 있다.",
+    "links": [
+      "identity",
+      "importance",
+      "memory",
+      "technology"
+    ]
+  },
+  {
+    "title": "Architecture",
+    "importance": 24,
+    "content": "구조는 기능과 감정 사이의 균형이다.",
+    "links": [
+      "design",
+      "importance",
+      "light",
+      "space"
+    ]
+  },
+  {
+    "title": "ARCHIVE_PULSE",
+    "importance": 2,
+    "content": "2",
+    "links": [
+      "MEMORY_CLUSTER"
+    ]
+  },
+  {
+    "title": "ARC_BUFFER",
+    "importance": 24,
+    "content": "네트워크는 개별 존재를 하나의 시스템으로 묶는다.",
+    "links": [
+      "NEXUS_FIELD",
+      "NEXUS_THREAD",
+      "SIGNAL_VECTOR",
+      "importance"
+    ]
+  },
+  {
+    "title": "ARC_GATE",
+    "importance": 2,
+    "content": "기억은 디지털 구조 안에서 다시 연결된다.",
+    "links": [
+      "ORBIT_FLOW",
+      "SPECTRAL_VECTOR",
+      "VECTOR_ENGINE",
+      "importance"
+    ]
+  },
+  {
+    "title": "ARC_MEMORY",
+    "importance": 23,
+    "content": "정보의 흐름은 새로운 건축 언어를 만든다.",
+    "links": [
+      "NEXUS_SYSTEM",
+      "SPECTRAL_MEMORY",
+      "importance"
+    ]
+  },
+  {
+    "title": "ARC_NETWORK",
+    "importance": 18,
+    "content": "빛은 기억보다 먼저 공간을 통과한다.",
+    "links": [
+      "AETHER_TERMINAL",
+      "NEON_VECTOR",
+      "QUANTUM_CHANNEL",
+      "importance"
+    ]
+  },
+  {
+    "title": "ASTRAL_ARCHIVE",
+    "importance": 12,
+    "content": "정보의 흐름은 새로운 건축 언어를 만든다.",
+    "links": [
+      "NEON_MEMORY",
+      "VECTOR_BRIDGE",
+      "ZENITH_ENGINE",
+      "importance"
+    ]
+  },
+  {
+    "title": "ASTRAL_CHANNEL",
+    "importance": 14,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ASTRAL_MEMORY",
+    "importance": 18,
+    "content": "빛은 기억보다 먼저 공간을 통과한다.",
+    "links": [
+      "ASTRAL_NODE",
+      "MEMORY_SIGNAL",
+      "SIGNAL_THREAD",
+      "SPECTRAL_VECTOR",
+      "importance"
+    ]
+  },
+  {
+    "title": "ASTRAL_NETWORK",
+    "importance": 6,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ASTRAL_NODE",
+    "importance": 2,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ASTRAL_SIGNAL",
+    "importance": 27,
+    "content": "기억은 디지털 구조 안에서 다시 연결된다.",
+    "links": [
+      "ARC_NETWORK",
+      "LUMEN_VECTOR",
+      "NEON_CLUSTER",
+      "PHASE_NODE",
+      "importance"
+    ]
+  },
+  {
+    "title": "ASTRAL_STREAM",
+    "importance": 11,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ASTRAL_SYSTEM",
+    "importance": 30,
+    "content": "도시는 거대한 인터페이스로 변화하고 있다.",
+    "links": [
+      "CORE_BRIDGE",
+      "CYBER_SYSTEM",
+      "VECTOR_TERMINAL",
+      "importance"
+    ]
+  },
+  {
+    "title": "ASTRAL_THREAD",
+    "importance": 10,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "CIPHER_GATE",
+    "importance": 20,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "CIPHER_THREAD",
+    "importance": 5,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "CORE_GATE",
+    "importance": 12,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "CORE_GRID",
+    "importance": 19,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ECHO_FIELD",
+    "importance": 5,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ECHO_VECTOR",
+    "importance": 1,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "LUMEN_NETWORK",
+    "importance": 20,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "LUMEN_THREAD",
+    "importance": 17,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "MEMORY_BRIDGE",
+    "importance": 20,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "MEMORY_BRIDGE_1",
+    "importance": 3,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "MEMORY_CLUSTER",
+    "importance": 18,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "MEMORY_PORT",
+    "importance": 11,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "MEMORY_THREAD",
+    "importance": 7,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "NEON_FLOW",
+    "importance": 13,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "NEON_NODE",
+    "importance": 3,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "NEON_NODE_1",
+    "importance": 11,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "NEON_PORT",
+    "importance": 19,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "NEXUS_STREAM",
+    "importance": 11,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "NEXUS_VECTOR",
+    "importance": 16,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ORBIT_GRID",
+    "importance": 13,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ORBIT_NODE",
+    "importance": 5,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "PULSE_BRIDGE",
+    "importance": 8,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "PULSE_FIELD",
+    "importance": 17,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "PULSE_NETWORK",
+    "importance": 19,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "QUANTUM_BRIDGE",
+    "importance": 12,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "QUANTUM_GRID",
+    "importance": 17,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "QUANTUM_MATRIX",
+    "importance": 11,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "QUANTUM_NETWORK",
+    "importance": 8,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "QUANTUM_NODE",
+    "importance": 3,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "SHADOW_CLUSTER",
+    "importance": 9,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "SIGNAL_BUFFER",
+    "importance": 2,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "SIGNAL_BUFFER_1",
+    "importance": 7,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "SPECTRAL_SYSTEM",
+    "importance": 18,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "SPECTRAL_SYSTEM_1",
+    "importance": 12,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "SYNTH_BRIDGE",
+    "importance": 6,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "SYNTH_NODE",
+    "importance": 18,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "SYNTH_SYSTEM",
+    "importance": 20,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "VOID_BUFFER",
+    "importance": 3,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "VOID_GRID",
+    "importance": 17,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "VOID_PORT",
+    "importance": 3,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ZENITH_ARCHIVE",
+    "importance": 10,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ZENITH_NETWORK",
+    "importance": 20,
+    "content": "",
+    "links": []
+  },
+  {
+    "title": "ZENITH_VECTOR",
+    "importance": 1,
+    "content": "",
+    "links": []
+  }
+]
