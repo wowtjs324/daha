@@ -1,3 +1,7 @@
 node_modules/
 *.log
 .DS_Store
+.env
+.webui_secret_key
+__pycache__/
+*.pyc
