@@ -1961,28 +1961,35 @@ ${textContent ? '내용:\n'+textContent.substring(0,2000)
         );
       }
 
-      // ── 재귀 파일 수집 ──
+      // ── 재귀 파일 수집 (병렬) ──
       async function collectFiles(dirHandle) {
-        const result = [];
-        const EXTS = [
+        const EXTS = new Set([
           '.md','.markdown','.txt','.text',
           '.png','.jpg','.jpeg','.gif','.webp','.svg','.bmp','.ico','.tif','.tiff',
           '.stl','.obj','.dxf','.dwg','.step','.stp','.igs','.iges','.3dm','.fbx','.gltf','.glb',
           '.psd','.ai','.sketch','.xd','.fig','.eps','.indd','.cdr','.afdesign',
           '.pdf','.docx','.doc','.pptx','.ppt','.xlsx','.xls',
           '.mp4','.mov','.avi','.mkv','.webm','.mp3','.wav','.flac','.aac','.ogg',
-        ];
+        ]);
+        const fileHandles = [];
+        const dirHandles  = [];
         try {
           for await (const [, handle] of dirHandle.entries()) {
+            if (handle.name.startsWith('.')) continue;
             if (handle.kind === 'file') {
               const low = handle.name.toLowerCase();
-              if (!handle.name.startsWith('.') && EXTS.some(e => low.endsWith(e)))
-                result.push(await handle.getFile());
+              const dot = low.lastIndexOf('.');
+              if (dot >= 0 && EXTS.has(low.slice(dot))) fileHandles.push(handle);
             } else if (handle.kind === 'directory') {
-              result.push(...await collectFiles(handle));
+              dirHandles.push(handle);
             }
           }
         } catch {}
+        // 파일 getFile() 병렬
+        const files = await Promise.all(fileHandles.map(h => h.getFile()));
+        // 하위 폴더도 병렬
+        const subResults = await Promise.all(dirHandles.map(h => collectFiles(h)));
+        const result = [...files, ...subResults.flat()];
         return result;
       }
 
@@ -2187,7 +2194,10 @@ ${textContent ? '내용:\n'+textContent.substring(0,2000)
         let imageDataUrl = null;
 
         if (category === 'IMAGE') {
-          try { imageDataUrl = thumbnail = await readAsDataURL(file); } catch {}
+          // 5MB 이하 이미지만 DataURL로 읽음 (대용량 스킵)
+          if (file.size < 5_000_000) {
+            try { imageDataUrl = thumbnail = await readAsDataURL(file); } catch {}
+          }
         } else {
           const res = await fetchPreview(file, ext);
           if (res) {

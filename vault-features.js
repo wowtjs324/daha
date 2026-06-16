@@ -75,7 +75,7 @@ export function buildAutoLinks(data, threshold = 0.18, maxPerNode = 5) {
 // ═══════════════════════════════════════════════
 // ② 클러스터링 (k-means)
 // ═══════════════════════════════════════════════
-export function clusterNodes(data, k = 6, iterations = 20) {
+export function clusterNodes(data, k = 6, iterations = 8) {
   if (data.length < k) k = data.length;
 
   const tokenize = s =>
